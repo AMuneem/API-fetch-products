@@ -16,12 +16,82 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cart_counter{
+  text-align: center;
 }
+.bulk_wrapper {
+  display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 20px;
+    /* animation: appear 2s infinite; */
+    position: relative;
+    animation-direction: alternate;
+    padding: 10px;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+
+}
+.single_product_inner{
+  display: flex;
+    justify-content: space-between;
+}
+.plus_minus_wrapper {
+  display: flex;
+}
+.plus_minus_wrapper input {
+  border: 1px solid #88adff;
+  width: 30%;
+  margin: 0 15px 0 15px;
+  text-align: center;
+}
+.plus_minus_wrapper .plus, .plus_minus_wrapper .minus {
+  color: #043aff;
+  background-color: #ececff;
+  padding: 0px 5px 3px 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 20px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total_price{
+  display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+  /* background: #000000 !important;
+  color: #ffffff !important; */
+}
+.animate{
+  /* animation: appear 0.6s ease-out; */
+  /* display: inline-block; */
+}
+
+@keyframes appear {
+  0%   {background-color: rgb(238, 191, 191);color:#848488;left:20px; top:0px;}
+  25%  {background-color: rgb(180, 183, 180); color:rgb(177, 171, 171);left:0px; top:0px; }
+  50%  {background-color: rgb(139, 139, 201); color:rgb(182, 225, 225); left:-20px; top:0px;}
+  100% {background-color: rgb(117, 122, 160); color: #dfd3d3; left:0px; top:0px;}
+  /* from {
+   
+    margin-right: 30px;
+  }
+
+  to {
+   
+    margin-left: 60px;
+  } */
+
+}
+
