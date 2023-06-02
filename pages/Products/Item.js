@@ -136,11 +136,11 @@ const Products = () => {
               <div className='warpperApiData'>
                 <Link href={`${allProducts.id}`}>
                   <div className='apiImage'>
-                    {/* <img
+                    <img
                     className='img-fluid'
-                    src={propsApiData.image}
+                    src={allProducts.image}
                     alt='Logo'
-                  /> */}
+                  />
                   </div>
 
                   <div className='apiCategory '>
